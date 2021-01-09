@@ -16,6 +16,8 @@ public class snakeAndLadder {
                                          int option_Check = (int) Math.floor(Math.random() * 10) % 3;
                                         if (option_Check == IS_LADDER)
                                                 player_Position += rolling_Die;
+							    if (player_Position > 100)
+                                                                  player_Position -= rolling_Die;
                                         else if (option_Check == IS_SNAKE)
                                               player_Position -= rolling_Die;
                                                                  if (player_Position < 0)
